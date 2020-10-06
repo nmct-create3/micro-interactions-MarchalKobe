@@ -25,9 +25,9 @@ const handlePasswordSwitcher = () => {
 };
 
 const getDOMElements = () => {
-    email.input = document.querySelector("");
-    email.field = document.querySelector("");
-    email.errorMessage = document.querySelector("");
+    email.input = document.querySelector(".js-email-input");
+    email.field = document.querySelector(".js-email-field");
+    email.errorMessage = document.querySelector(".js-email-error-message");
 
     password.input = document.querySelector("");
     password.field = document.querySelector("");
@@ -40,4 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Script loaded!');
     // handleFloatingLabel();
     handlePasswordSwitcher();
+
+    getDOMElements();
 });
